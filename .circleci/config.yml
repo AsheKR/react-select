@@ -68,5 +68,6 @@ jobs:
             - run:
                   name: Running E2E tests
                   command: |
-                      yarn install
+                      yarn global add cypress
+                      cypress install
                       yarn e2e
